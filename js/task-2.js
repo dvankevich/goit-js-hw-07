@@ -47,13 +47,19 @@ const gallery = document.querySelector(".gallery");
 
 // console.log(images.length);
 
-let galleryItems = "";
+const galleryItems = images
+  .map((element) => {
+    return `<li><img src="${element.url}" alt="${element.alt}"</li>`;
+  })
+  .join(" ");
 
-for (let index = 0; index < images.length; index++) {
-  const element = images[index];
-  // console.log(`<li><img src="${element.url}" alt="${element.alt}"</li>`);
-  galleryItems += `<li><img src="${element.url}" alt="${element.alt}"</li>`;
-}
+// Г-код але працює :)
+// let galleryItems = "";
+// for (let index = 0; index < images.length; index++) {
+//   const element = images[index];
+//   // console.log(`<li><img src="${element.url}" alt="${element.alt}"</li>`);
+//   galleryItems += `<li><img src="${element.url}" alt="${element.alt}"</li>`;
+// }
 
 // console.log(galleryItems);
 
