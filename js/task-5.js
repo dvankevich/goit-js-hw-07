@@ -11,12 +11,21 @@ function setBodyBackgroundColor(bgColor) {
 }
 
 // console.log(getRandomHexColor());
-
 // https://www.geeksforgeeks.org/how-to-change-the-background-color-after-clicking-the-button-in-javascript/
-
 // setBodyBackgroundColor("red");
 // setBodyBackgroundColor(getRandomHexColor());
 // console.log(document.body.style.backgroundColor);
-
 // https://www.w3schools.com/jsref/event_onclick.asp
 // https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
+
+const button = document.querySelector(".change-color");
+
+button.addEventListener("click", handleClick);
+
+function handleClick(event) {
+  const backgroundColor = getRandomHexColor();
+  setBodyBackgroundColor(backgroundColor);
+  const span = document.querySelector(".color");
+  // console.log(span.textContent);
+  span.textContent = backgroundColor;
+}
