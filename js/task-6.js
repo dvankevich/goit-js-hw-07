@@ -25,7 +25,7 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   boxes.innerHTML = "";
-  console.log("Destroy button pressed");
+  //console.log("Destroy button pressed");
 }
 
 const controlBox = document.querySelector("#controls");
@@ -45,7 +45,7 @@ destroyButton.addEventListener("click", destroyBoxes);
 createButton.addEventListener("click", createButtonHandler);
 
 function createButtonHandler(event_onclick) {
-  console.log(inputBox.value);
+  //console.log(inputBox.value);
   if (inputBox.value > 0 && inputBox.value <= 100) {
     //console.log(`draw ${inputBox.value} divs`);
     createBoxes(inputBox.value);
