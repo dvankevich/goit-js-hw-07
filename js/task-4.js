@@ -13,7 +13,7 @@ function handleSubmit(event) {
   if (email === "" || password === "") {
     //  https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
     //return console.log("Please fill in all the fields!");
-    window.alert("Please fill in all the fields!");
+    window.alert("All form fields must be filled in");
   }
 
   console.log({ email, password });
