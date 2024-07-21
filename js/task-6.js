@@ -31,10 +31,12 @@ function destroyBoxes() {
 const controlBox = document.querySelector("#controls");
 const inputBox = document.querySelector("input");
 //console.log(inputBox.value);
-const controlsButtons = document.querySelectorAll("button");
+//const controlsButtons = document.querySelectorAll("button");
 //console.log(controlsButtons);
-const createButton = controlsButtons[0];
-const destroyButton = controlsButtons[1];
+//const createButton = controlsButtons[0];
+//const destroyButton = controlsButtons[1];
+const createButton = document.querySelector("[data-create]");
+const destroyButton = document.querySelector("[data-destroy]");
 //console.log(createButton);
 //console.log(destroyButton);
 
@@ -45,11 +47,11 @@ createButton.addEventListener("click", createButtonHandler);
 function createButtonHandler(event_onclick) {
   console.log(inputBox.value);
   if (inputBox.value > 0 && inputBox.value <= 100) {
-    console.log(`draw ${inputBox.value} divs`);
+    //console.log(`draw ${inputBox.value} divs`);
     createBoxes(inputBox.value);
     inputBox.value = "";
   } else {
-    console.log("Error message");
+    //console.log("Error message");
     alert("Value must be in range 1..100");
   }
 }
