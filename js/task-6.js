@@ -18,9 +18,12 @@ function boxHtml(n, col) {
 //boxes.insertAdjacentHTML("beforeend", boxHtml(3, getRandomHexColor()));
 
 function createBoxes(amount) {
-  for (let index = amount; index >= 1; index--) {
-    boxes.insertAdjacentHTML("afterbegin", boxHtml(index, getRandomHexColor()));
+  let htmlCode = "";
+  for (let index = 1; index <= amount; index++) {
+    //boxes.insertAdjacentHTML("afterbegin", boxHtml(index, getRandomHexColor()));
+    htmlCode += boxHtml(index, getRandomHexColor());
   }
+  boxes.innerHTML = htmlCode;
 }
 
 function destroyBoxes() {
