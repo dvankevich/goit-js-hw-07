@@ -1,8 +1,8 @@
 .login-form {
+  background: #fff;
   border-radius: 8px;
   padding: 24px;
   width: 408px;
-  background: #fff;
 }
 
 label {
@@ -11,7 +11,7 @@ label {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
@@ -20,7 +20,7 @@ input {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
   padding: 8px 16px;
