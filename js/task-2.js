@@ -33,7 +33,7 @@ const gallery = document.querySelector('.gallery');
 
 const galleryItems = images
   .map(element => {
-    return `<li><img src="${element.url}" alt="${element.alt}"</li>`;
+    return `<li><img src="${element.url}" alt="${element.alt}"></li>`;
   })
   .join(' ');
 
